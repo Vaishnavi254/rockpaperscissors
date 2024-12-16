@@ -1,0 +1,109 @@
+/* General reset and body setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Styling for the main heading */
+h1 {
+    font-size: 3rem;
+    color: #fff;
+    background-color: #d2a3ff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Styling for the game board container */
+.game-board {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1000px;
+}
+
+/* Style for the player options (Rock, Paper, Scissors) */
+.player-options {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for each image (rock, paper, scissor) */
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1); /* Slight scale on hover for interactivity */
+}
+
+/* Styling for the scoreboard */
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.scoreboard div {
+    margin: 10px 0;
+}
+
+.scoreboard h2 {
+    font-size: 1.5rem;
+    color: #444;
+}
+
+.scoreboard p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styling for the message section */
+.message {
+    margin-top: 30px;
+}
+
+.message p {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Border effect for interactive elements */
+.border {
+    border: 3px solid red;
+    border-radius: 50%;
+}
+
+/* Flex container for the whole game content */
+.game-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+#msg{
+    color: blueviolet;
+}
